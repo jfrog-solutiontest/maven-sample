@@ -7,8 +7,15 @@
             <repositories>
                 <repository>
                     <snapshots>
-                        <enabled>false</enabled>
+                        <enabled>true</enabled>
+			<updatePolicy>always</updatePolicy>
+			<checksumPolicy>fail</checksumPolicy>
                     </snapshots>
+		    <releases>
+			<enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                        <checksumPolicy>fail</checksumPolicy>
+		    </releases>		
                     <id>central</id>
                     <name>bintray</name>
                     <url>${url}</url>
@@ -16,9 +23,15 @@
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
-                    <snapshots>
-                        <enabled>false</enabled>
+		    <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                        <checksumPolicy>fail</checksumPolicy>
                     </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                        <checksumPolicy>fail</checksumPolicy>
+                    </releases>
                     <id>central</id>
                     <name>bintray-plugins</name>
                     <url>${url}</url>
